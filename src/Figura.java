@@ -1,9 +1,10 @@
-public class Figura
+public abstract class Figura
 {
-    int x, y;
+    //int x, y;
     double perimetro;
     double area;
 
+    /*
     public void setX(int x) {
         this.x = x;
     }
@@ -11,16 +12,11 @@ public class Figura
     public void setY(int y) {
         this.y = y;
     }
+     */
 
-    public void calcularPerimetro()
-    {
-        perimetro = (2 * x) + (2 * y);
-    }
+    protected abstract void calcularPerimetro();
 
-    public void calcularArea()
-    {
-        area = x * y;
-    }
+    protected abstract void calcularArea();
 
     public double getArea() {
         return area;

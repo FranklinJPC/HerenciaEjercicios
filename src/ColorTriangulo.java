@@ -1,5 +1,6 @@
-public class ColorTriangulo extends Triangulo
+public class ColorTriangulo
 {
+    /*
     private String color;
     ColorTriangulo(String c, String s, double b, double h)
     {
@@ -15,4 +16,6 @@ public class ColorTriangulo extends Triangulo
     {
         System.out.println("Color: " + color);
     }
+
+     */
 }

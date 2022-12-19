@@ -1,13 +1,16 @@
-public class DosDimensiones
+public abstract class DosDimensiones
 {
     private double base;
     private double altura;
+
+    private double area;
 
     DosDimensiones()
     {
         base = altura = 0.0;
     }
 
+    //[2]
     DosDimensiones(double b, double h)
     {
         base = b;
@@ -27,16 +30,22 @@ public class DosDimensiones
         return altura;
     }
 
+    //Setear los valores de evio de datos
+    //Sin embargo estos valores se auto setean
+    //al enviarlos al constructor 2 dimensiones [2]
+    /*
     public void setBase(double b) {
         base = b;
     }
 
     public void setAltura(double h) {
         altura = h;
-    }
+    }*/
 
     void mostrarDimension()
     {
         System.out.println("Base es " + base +  " y " + altura + " es altura");
     }
+
+    protected abstract void calcularArea();
 }
